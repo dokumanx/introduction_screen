@@ -231,7 +231,7 @@ class IntroductionScreenState extends State<IntroductionScreen> {
               controller: _pageController,
               physics: widget.freeze
                   ? const NeverScrollableScrollPhysics()
-                  : const BouncingScrollPhysics(),
+                  : const ClampingScrollPhysics(),
               children: widget.pages.map((p) => IntroPage(page: p)).toList(),
               onPageChanged: widget.onChange,
             ),
