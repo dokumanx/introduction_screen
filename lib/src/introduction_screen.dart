@@ -135,6 +135,7 @@ class IntroductionScreen extends StatefulWidget {
           pages.length > 0,
           "You provide at least one page on introduction screen !",
         ),
+        assert(onDone != null),
         assert(done != null),
         assert((showSkipButton && skip != null) || !showSkipButton),
         assert(skipFlex >= 0 && dotsFlex >= 0 && nextFlex >= 0),
